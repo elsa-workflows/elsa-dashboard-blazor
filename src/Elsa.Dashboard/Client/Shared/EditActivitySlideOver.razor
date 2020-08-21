@@ -1,0 +1,104 @@
+﻿<div class="fixed inset-0 overflow-hidden">
+    <div class="absolute inset-0 overflow-hidden">
+        <section class="absolute inset-y-0 right-0 pl-10 max-w-full flex sm:pl-16">
+            <!--
+              Slide-over panel, show/hide based on slide-over state.
+
+              Entering: "transform transition ease-in-out duration-500 sm:duration-700"
+                From: "translate-x-full"
+                To: "translate-x-0"
+              Leaving: "transform transition ease-in-out duration-500 sm:duration-700"
+                From: "translate-x-0"
+                To: "translate-x-full"
+            -->
+            <div class="w-screen max-w-2xl">
+                <div class="h-full flex flex-col bg-white shadow-xl overflow-y-scroll">
+                    <div class="flex-1">
+                        <!-- Header -->
+                        <header class="px-4 py-6 bg-indigo-700 sm:px-6">
+                            <div class="flex items-start justify-between space-x-3">
+                                <div class="space-y-1">
+                                    <h2 class="text-lg leading-7 font-medium text-white">
+                                        Add Write Line activity
+                                    </h2>
+                                    <p class="text-sm text-indigo-300 leading-5">
+                                        Writes a line of text to standard-out.
+                                    </p>
+                                </div>
+                                <div class="h-7 flex items-center">
+                                    <button aria-label="Close panel" class="text-gray-400 hover:text-gray-500 transition ease-in-out duration-150">
+                                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </header>
+
+                        <!-- Divider container -->
+                        <div class="py-6 space-y-6 sm:py-0 sm:space-y-0 ">
+                            <!-- Activity display name -->
+                            <div class="space-y-1 px-4 sm:space-y-0 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6 sm:py-5">
+                                <div>
+                                    <label for="activity_title" class="block text-sm font-medium leading-5 text-gray-900 sm:mt-px sm:pt-2">
+                                        Title
+                                    </label>
+                                </div>
+                                <div class="sm:col-span-2">
+                                    <div class="rounded-md shadow-sm">
+                                        <input id="activity_title" class="form-input block w-full sm:text-sm sm:leading-5" placeholder="">
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Activity technical name-->
+                            <div class="space-y-1 px-4 sm:space-y-0 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6 sm:py-5">
+                                <div>
+                                    <label for="activity_name" class="block text-sm font-medium leading-5 text-gray-900 sm:mt-px sm:pt-2">
+                                        Name
+                                    </label>
+                                </div>
+                                <div class="sm:col-span-2">
+                                    <div class="rounded-md shadow-sm">
+                                        <input id="activity_name" class="form-input block w-full sm:text-sm sm:leading-5" placeholder="">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Project description -->
+                            <div class="space-y-1 px-4 sm:space-y-0 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6 sm:py-5">
+                                <div>
+                                    <label for="project_description" class="block text-sm font-medium leading-5 text-gray-900 sm:mt-px sm:pt-2">
+                                        Text
+                                    </label>
+                                </div>
+                                <div class="sm:col-span-2">
+                                    <div class="flex rounded-md shadow-sm">
+                                        <input id="text" class="form-input block w-full sm:text-sm sm:leading-5" placeholder="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                    <!-- Action buttons -->
+                    <div class="flex-shrink-0 px-4 border-t border-gray-200 py-5 sm:px-6">
+                        <div class="space-x-3 flex justify-end">
+                            <span class="inline-flex rounded-md shadow-sm">
+                                <button type="button" class="py-2 px-4 border border-gray-300 rounded-md text-sm leading-5 font-medium text-gray-700 hover:text-gray-500 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:bg-gray-50 active:text-gray-800 transition duration-150 ease-in-out">
+                                    Cancel
+                                </button>
+                            </span>
+                            <span class="inline-flex rounded-md shadow-sm">
+                                <button type="submit" class="inline-flex justify-center py-2 px-4 border border-transparent text-sm leading-5 font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo active:bg-indigo-700 transition duration-150 ease-in-out">
+                                    Create
+                                </button>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
